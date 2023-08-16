@@ -29,7 +29,7 @@ export const FormMapa = ({ poligonosData, setPoligonosData }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:20000/api/sendemail",
+        "http://localhost:5500/api/sendemail",
         data
       );
       console.log(response.data);
