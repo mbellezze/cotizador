@@ -44,9 +44,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "bin": {
-    "logo": "public/img/logo-norden.png"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
