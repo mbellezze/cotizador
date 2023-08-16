@@ -29,7 +29,7 @@ export const FormMapa = ({ poligonosData, setPoligonosData }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5500/api/sendemail",
+        "https://cotizador-api-production.up.railway.app/api/sendemail",
         data
       );
       console.log(response.data);
