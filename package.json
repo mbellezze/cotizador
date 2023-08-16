@@ -24,7 +24,6 @@
     "leaflet-geometryutil": "^0.10.2",
     "leaflet-measure": "^3.1.0",
     "leaflet-measure-path": "^1.5.0",
-    "logo": "file:../../../../../AppData/Roaming/npm/node_modules/logo",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
