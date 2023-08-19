@@ -666,6 +666,9 @@ header .intro-text {
 .leaflet-popup-content {
   width: 200px;
 }
+.padd-form {
+  padding: 0;
+}
 .alinearBoton {
   text-align: center;
 }

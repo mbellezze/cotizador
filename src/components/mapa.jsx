@@ -163,7 +163,7 @@ export const Mapa = () => {
       <div className="formPopUp">
         <h3>Lote {poligonoId}</h3>
         <form name="sentMessage" onSubmit={saveData} validate>
-          <div className="col-md-12">
+          <div className="col-md-12 padd-form">
             <div className="form-group">
               <label htmlFor="cultivo">Cultivo</label>
               <select className="form-control" required ref={selectRef}>
@@ -177,21 +177,21 @@ export const Mapa = () => {
               <p className="help-block text-danger"></p>
             </div>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-12 padd-form">
             <div className="form-group">
               <input
                 type="text"
                 id="priceHec"
                 name="priceHec"
                 className="form-control"
-                placeholder="Valor del lote*"
+                placeholder="Suma asegurada por ha*"
                 ref={priceRef}
                 required
               />
               <p className="help-block text-danger"></p>
             </div>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-12 padd-form">
             <div className="form-group">
               <label htmlFor="area">Área marcada</label>
               <input
@@ -207,7 +207,7 @@ export const Mapa = () => {
             </div>
           </div>
 
-          <div className="col-md-12">
+          <div className="col-md-12 padd-form">
             <textarea
               name="message"
               id="message"
@@ -241,7 +241,6 @@ export const Mapa = () => {
     L.drawLocal.draw.toolbar.undo.title = "Eliminar último punto dibujado";
     L.drawLocal.draw.toolbar.undo.text = "Eliminar último punto";
     L.drawLocal.draw.toolbar.buttons.polygon = "Dibujar polígono";
-    L.drawLocal.draw.toolbar.buttons.marker = "Dibujar marcador";
     L.drawLocal.edit.toolbar.actions.clearAll.title = "Eliminar todo del mapa";
     L.drawLocal.edit.toolbar.actions.clearAll.text = "Eliminar todo";
 
@@ -251,8 +250,6 @@ export const Mapa = () => {
     L.drawLocal.edit.toolbar.actions.cancel.title =
       "Cancelar edición, descartar cambios";
     L.drawLocal.edit.toolbar.actions.cancel.text = "Cancelar";
-    L.drawLocal.edit.toolbar.buttons.edit = "Editar capas";
-    L.drawLocal.edit.toolbar.buttons.editDisabled = "No hay capas para editar";
     L.drawLocal.edit.toolbar.buttons.remove = "Eliminar capas";
     L.drawLocal.edit.toolbar.buttons.removeDisabled =
       "No hay capas para eliminar";
@@ -319,13 +316,7 @@ export const Mapa = () => {
               polyline: false,
               circle: false,
               circlemarker: false,
-              marker: {
-                icon: new L.Icon({
-                  iconUrl:
-                    "https://cdn-icons-png.flaticon.com/512/2776/2776000.png",
-                  iconSize: [38, 38],
-                }),
-              },
+              marker: false,
               polygon: {
                 showArea: true,
                 shapeOptions: {

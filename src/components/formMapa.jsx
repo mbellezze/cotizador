@@ -96,23 +96,6 @@ export const FormMapa = ({ poligonosData, setPoligonosData }) => {
               </div>
               <div className="col-md-12">
                 <div className="form-group">
-                  <div className="areaTel">
-                    <input
-                      type="number"
-                      id="celphone"
-                      name="celphone"
-                      className="form-control"
-                      placeholder="Número de contacto*"
-                      value={celphone}
-                      onChange={(e) => setCelPhone(e.target.value)}
-                      required
-                    />
-                    <p className="help-block text-danger"></p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-12">
-                <div className="form-group">
                   <input
                     type="number"
                     id="document"
@@ -124,6 +107,23 @@ export const FormMapa = ({ poligonosData, setPoligonosData }) => {
                     required
                   />
                   <p className="help-block text-danger"></p>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <div className="form-group">
+                  <div className="areaTel">
+                    <input
+                      type="number"
+                      id="celphone"
+                      name="celphone"
+                      className="form-control"
+                      placeholder="Teléfono de contacto*"
+                      value={celphone}
+                      onChange={(e) => setCelPhone(e.target.value)}
+                      required
+                    />
+                    <p className="help-block text-danger"></p>
+                  </div>
                 </div>
               </div>
               <div className="col-md-12">
